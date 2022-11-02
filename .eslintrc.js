@@ -12,7 +12,8 @@ module.exports = {
         ecmaVersion: 13,
         sourceType: 'module',
     },
-    plugins: ['react', 'prettier'],
+    plugins: ['react', 'prettier', 'material-ui'
+    ],
     rules: {
         'import/prefer-default-export': 'off',
         'import/no-unresolved': 'off',
@@ -20,6 +21,7 @@ module.exports = {
         'react/jsx-fragments': ['error', 'element'],
         'import/no-extraneous-dependencies': 'off',
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        "material-ui/rule-name": 2,
         'react/function-component-definition': [
             'error',
             {
@@ -35,4 +37,4 @@ module.exports = {
             },
         },
     ],
-  };
+};
